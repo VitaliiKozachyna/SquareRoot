@@ -1,8 +1,9 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class SquareRoot {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in).useLocale(Locale.US);
         double num = scn.nextDouble();
         double y_prev = 1;
         double y_next;
